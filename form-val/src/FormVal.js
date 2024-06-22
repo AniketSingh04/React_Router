@@ -63,37 +63,37 @@ const FormVal = () => {
         <div className='container'>
             <h1>Form Validation</h1>
             <form onSubmit={handleSubmit}>
-                <div>
+                <div className="validation-box">
                     <label>Name : </label>
                     <input type="text" value={name} onChange={(event) => setName(event.target.value)} />
                     {error.name}
                 </div>
                 <br />
-                <div>
+                <div className="validation-box">
                     <label>Email : </label>
                     <input type="email" value={email} onChange={(event) => setEmail(event.target.value)} />
                     {error.email}
                 </div>
                 <br />
-                <div>
+                <div className="validation-box">
                     <label>Password : </label>
                     <input type="password" value={password} onChange={(event) => setPassword(event.target.value)} />                    
                     {error.password}
                 </div>
                 <br />
-                <div>
+                <div className="validation-box">
                     <label>Confirm Password : </label>
                     <input type="password" value={confirmPassword} onChange={(event) => setConfirmPassword(event.target.value)} />
                     {error.confirmPassword}
                 </div>
                 <br />
-                <div>
+                <div className="validation-box">
                     <label>Age : </label>
                     <input type="text" value={age} onChange={(event) => setAge(event.target.value)} />
                     {error.age}
                 </div>
                 <br />
-                <div>
+                <div className="validation-box">
                     <label>Sex : </label>
                     <select value={sex} onChange={(event) => setSex(event.target.value)}>
                         <option value="">Select Gender</option>
