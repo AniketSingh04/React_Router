@@ -1,0 +1,110 @@
+/* form.css */
+
+/* Apply Google Fonts Roboto as the default font family */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5dc; /* Light gray background */
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto; /* Center the form */
+    padding: 20px;
+    background-color: #fff; /* White background for the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the form */
+    border-radius: 8px; /* Rounded corners */
+}
+
+h1 {
+    text-align: center;
+    color: #333; /* Dark gray heading */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #666; /* Medium gray label */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #007bff; /* Blue button */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+}
+
+/* Validation Box*/
+
+.validation-box {
+    background-color: rgba(255, 0, 0, 0.1); /* Light red background */
+    color: #dc3545; /* Dark red text color */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px; /* Larger font size */
+    border: 1px solid #dc3545; /* Dark red border */
+    font-weight: bold; /* Bold text */
+}
+
+.validation-box p {
+    margin: 0;
+}
+
+/* Example styling for success message */
+.success-box {
+    background-color: rgba(40, 167, 69, 0.1); /* Light green background */
+    color: #28a745; /* Dark green text color */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px; /* Larger font size */
+    border: 1px solid #28a745; /* Dark green border */
+    font-weight: bold; /* Bold text */
+}
+
+.success-box p {
+    margin: 0;
+}
+
+
+
+
+
